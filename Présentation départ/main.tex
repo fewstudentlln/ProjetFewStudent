@@ -1,0 +1,90 @@
+\documentclass[12pt, a4paper]{report}
+
+% --- Packaged de base ---
+\usepackage[utf8]{inputenc}    % Encodage
+\usepackage[T1]{fontenc}       % Encodage des polices
+\usepackage[french]{babel}     % Langue française
+\usepackage{graphicx}          % Insertion d'images
+\usepackage{geometry}          % Gestion des marges
+\geometry{top=2.5cm, bottom=2.5cm, left=2.5cm, right=2.5cm}
+
+% --- Esthétique et Navigation ---
+\usepackage{fancyhdr}          % En-têtes et pieds de page
+\usepackage{hyperref}          % Liens cliquables
+\usepackage{booktabs}          % Tableaux professionnels
+
+% --- Configuration de l'en-tête ---
+\pagestyle{fancy}
+\fancyhf{}
+\lhead{Projet Formula Student}
+\rhead{Nom de l'Écurie}
+\cfoot{\thepage}
+
+% --- Début du document ---
+\begin{document}
+
+% --- Page de Garde ---
+\begin{titlepage}
+    \centering
+    \vspace*{1cm}
+    {\huge\bfseries Dossier de Création d'Équipe \par}
+    \vspace{0.5cm}
+    {\LARGE Formula Student \par}
+    \vspace{1.5cm}
+    \includegraphics[width=0.6\textwidth]{logo_projet.png}\par % Remplacez par votre logo
+    \vspace{1.5cm}
+    {\large Préparé par : \textbf{Prénom Nom} \par}
+    \vfill
+    {\large Date : \today \par}
+\end{titlepage}
+
+% --- Sommaire ---
+\tableofcontents
+\newpage
+
+% --- Chapitre 1 : Vision ---
+\chapter{Présentation du Projet}
+\section{Vision et Objectifs}
+L'objectif est de concevoir une monoplace de type Formula Student pour participer aux compétitions européennes.
+
+\section{Valeurs de l'Équipe}
+Innovation, rigueur technique et esprit d'équipe.
+
+% --- Chapitre 2 : Organisation ---
+\chapter{Management et Organisation}
+\section{Structure de l'Équipe}
+L'équipe est divisée en plusieurs pôles techniques et administratifs :
+\begin{itemize}
+    \item Pôle Châssis et Liaison au sol.
+    \item Pôle Powertrain (Électrique/Thermique).
+    \item Pôle Sponsoring et Communication.
+\end{itemize}
+
+% --- Chapitre 3 : Étude Technique ---
+\chapter{Conception Technique}
+\section{Spécifications du Véhicule}
+Description des cibles de performance (poids, puissance, aérodynamisme).
+
+% --- Chapitre 4 : Budget et Financement ---
+\chapter{Business Plan}
+\section{Budget Prévisionnel}
+\begin{table}[h]
+    \centering
+    \begin{tabular}{lr}
+        \toprule
+        Poste de dépense & Montant estimé (€) \\
+        \midrule
+        Matières premières & 5 000 \\
+        Électronique & 3 000 \\
+        Inscription compétitions & 2 500 \\
+        \bottomrule
+    \end{tabular}
+    \caption{Estimation budgétaire préliminaire}
+\end{table}
+
+% --- Conclusion ---
+\chapter*{Conclusion}
+\addcontentsline{toc}{chapter}{Conclusion}
+Ce projet représente un défi d'ingénierie majeur pour notre établissement...
+
+\end{document}
