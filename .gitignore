@@ -1,0 +1,18 @@
+# --- LaTeX ---
+*.aux
+*.log
+*.toc
+*.out
+*.fdb_latexmk
+*.fls
+*.synctex.gz
+*.pdf
+# Note: Si tu veux garder tes PDF de sponsors, 
+# on ne bloque que les PDF générés par LaTeX.
+# Si tu veux garder TOUS les PDF, retire la ligne *.pdf ci-dessus.
+
+# --- Code & System ---
+.DS_Store
+__pycache__/
+*.exe
+*.o
