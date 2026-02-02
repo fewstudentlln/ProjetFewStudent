@@ -1,4 +1,17 @@
 /* Style minimaliste pour projet racing */
+.hero-content {
+    background: rgba(50, 50, 50, 0.8); /* gris non opaque */
+    padding: 2rem 3rem;
+    border-radius: 12px;
+    max-width: 800px;
+}
+
+.hero-content h1,
+.hero-content p {
+    color: white;
+}
+
+
 body {
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     line-height: 1.6;
