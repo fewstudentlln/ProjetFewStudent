@@ -1,8 +1,6 @@
 {
   "latex-workshop.latex.autoBuild.run": "onFileChange",
 
-  "latex-workshop.latex.outDir": "out",
-
   "latex-workshop.latex.tools": [
     {
       "name": "latexmk",
@@ -12,7 +10,6 @@
         "-interaction=nonstopmode",
         "-synctex=1",
         "-file-line-error",
-        "-outdir=out",
         "%DOC%"
       ]
     }
@@ -20,23 +17,11 @@
 
   "latex-workshop.latex.recipes": [
     {
-      "name": "latexmk (auto)",
+      "name": "latexmk",
       "tools": ["latexmk"]
     }
   ],
 
   "latex-workshop.view.pdf.viewer": "tab",
-
-  "latex-workshop.view.pdf.internal.synctex.activate": true,
-
-  "latex-workshop.latex.clean.fileTypes": [
-    "*.aux",
-    "*.bbl",
-    "*.blg",
-    "*.fls",
-    "*.log",
-    "*.out",
-    "*.synctex.gz",
-    "*.toc"
-  ]
+  "latex-workshop.view.pdf.internal.synctex.activate": true
 }
