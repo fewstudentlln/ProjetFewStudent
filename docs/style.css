@@ -14,7 +14,7 @@
 /* Corps de page */
 body {
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-    line-height: 1.6;
+    line-height: 1.2;
     margin: 0;
     color: #333;
     background-color: #F2F2F2; /* gris clair UCL */
@@ -24,7 +24,7 @@ body {
 header {
     background: #003366; /* bleu foncé UCL */
     color: #fff;
-    padding: 1rem 0;
+    padding: 0;
     position: sticky;
     top: 0;
 }
@@ -34,14 +34,46 @@ nav {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    max-width: 1100px;
+    max-width: 200px;
     margin: auto;
     padding: 0 2rem;
 }
 
+nav.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 2rem;
+    max-width: 1200px;
+    margin: 0 auto;
+    height: 80px;
+}
+
 nav ul { display: flex; list-style: none; }
-nav ul li { margin-left: 20px; }
+nav ul li { margin-left: 10px; }
 nav ul li a { color: #fff; text-decoration: none; font-weight: bold; }
+
+.logo {
+    font-size: 0;
+    width: 100px;
+    height: 120px;
+    background-image: url("images/Sticker\ FEWLLN\ reduit.png");
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+nav.navbar ul {
+    display: flex;
+    list-style: none;
+    gap: 2rem;
+}
+
+nav.navbar a {
+    text-decoration: none;
+    color: #fff;
+    font-weight: bold;
+}
 
 #hero {
     background-image: url("images/photo formula student.jpg");
